@@ -31,18 +31,6 @@ function App() {
   });
   const [select, setSelect] = useState("");
   const choosed = data[select];
-  console.log(select);
-  console.log(choosed);
-  // const [body, setBody] = useState(0);
-  // const [eyes, setEyes] = useState(0);
-  // const [eyebrows, setEyebrows] = useState(0);
-  // const [hair, setHair] = useState(0);
-  // const [cloth1, setCloth1] = useState(0);
-  // const [cloth2, setCloth2] = useState(0);
-  // const [cloth3, setCloth3] = useState(0);
-  // const [mouth, setMouth] = useState(0);
-  // const [glasses, setGlasses] = useState(0);
-  // const [hat, setHat] = useState(0);
 
   const randomize = () => {
     setData({
@@ -57,16 +45,6 @@ function App() {
       glasses: Math.floor(Math.random() * total.glasses),
       hats: Math.floor(Math.random() * total.hats),
     });
-    // setBody(Math.floor(Math.random() * total.body));
-    // setEyes(Math.floor(Math.random() * total.eyes));
-    // setEyebrows(Math.floor(Math.random() * total.eyebrows));
-    // setHair(Math.floor(Math.random() * total.hair));
-    // setCloth1(Math.floor(Math.random() * total.cloth1));
-    // setCloth2(Math.floor(Math.random() * total.cloth2));
-    // setCloth3(Math.floor(Math.random() * total.cloth3));
-    // setMouth(Math.floor(Math.random() * total.mouth));
-    // setGlasses(Math.floor(Math.random() * total.glasses));
-    // setHat(Math.floor(Math.random() * total.hat));
   };
   useEffect(() => {
     randomize();
@@ -107,98 +85,6 @@ function App() {
             </button>
           </div>
         </div>
-        {/* <div>
-          <div className="list-section">
-            <h2>Body</h2>
-            <PartList
-              total={total.body}
-              path="body"
-              set={setBody}
-              selected={body}
-            />
-          </div>
-          <div className="list-section">
-            <h2>Eyes</h2>
-            <PartList
-              total={total.eyes}
-              path="eyes"
-              set={setEyes}
-              selected={eyes}
-            />
-          </div>
-          <div className="list-section">
-            <h2>Eye Brows</h2>
-            <PartList
-              total={total.eyebrows}
-              path="eyebrows"
-              set={setEyebrows}
-              selected={eyebrows}
-            />
-          </div>
-          <div className="list-section">
-            <h2>Hair</h2>
-            <PartList
-              total={total.hair}
-              path="hair"
-              set={setHair}
-              selected={hair}
-            />
-          </div>
-          <div className="list-section">
-            <h2>Mouth </h2>
-            <PartList
-              total={total.mouth}
-              path="mouths"
-              set={setMouth}
-              selected={mouth}
-            />
-          </div>
-          <div className="list-section">
-            <h2>Clothing (Layer 1)</h2>
-            <PartList
-              total={total.cloth1}
-              path="clothes/layer_1"
-              set={setCloth1}
-              selected={cloth1}
-            />
-          </div>
-          <div className="list-section">
-            <h2>Clothing (Layer 2)</h2>
-            <PartList
-              total={total.cloth2}
-              path="clothes/layer_2"
-              set={setCloth2}
-              selected={cloth2}
-            />
-          </div>
-          <div className="list-section">
-            <h2>Clothing (Layer 3)</h2>
-            <PartList
-              total={total.cloth3}
-              path="clothes/layer_3"
-              set={setCloth3}
-              selected={cloth3}
-            />
-          </div>
-          <div className="list-section">
-            <h2>Glasses</h2>
-            <PartList
-              total={total.glasses}
-              path="accessories/glasses"
-              set={setGlasses}
-              selected={glasses}
-            />
-          </div>
-          <div className="list-section">
-            <h2>Hats</h2>
-            <PartList
-              total={total.hat}
-              path="accessories/hats"
-              set={setHat}
-              selected={hat}
-            />
-          </div>
-        </div> */}
       </div>
     </div>
   );
