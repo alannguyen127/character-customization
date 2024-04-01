@@ -65,7 +65,7 @@ h2 {
   padding: 50px;
   position: relative;
   background-color: #f6f7e2;
-  top: calc(50% - 205px);
+  /* top: calc(50% - 205px); */
   max-height: 320px;
   margin-left: 30px;
 }
