@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Avatar from "./components/Avatar";
 import "./App.css";
 import ChooseList from "./components/ChooseList";
+// import PartList from "./components/PartList";
+// import Part from "./components/Part";
 
 const total = {
   body: 17,
@@ -29,7 +31,7 @@ function App() {
     glasses: 0,
     hats: 0,
   });
-  const [select, setSelect] = useState("");
+  const [select, setSelect] = useState("body");
   const choosed = data[select];
 
   const randomize = () => {
@@ -53,19 +55,18 @@ function App() {
   return (
     <div className="container">
       <div className="title">CUSTOMIZE</div>
-      <div className="subtitle">YOUR APPEARANCE</div>
+      <div className="subtitle">😊YOUR APPEARANCE😊</div>
       <div className="divider"></div>
-      <div className="avatar-group">
-        <div className="choose-list">
-          <ChooseList
-            total={total[select]}
-            path={select}
-            set={setData}
-            item={select}
-            select={setSelect}
-            choosed={choosed}
-          />
-        </div>
+      <div className="main-content">
+        <ChooseList
+          total={total[select]}
+          path={select}
+          set={setData}
+          item={select}
+          select={setSelect}
+          choosed={choosed}
+        />
+
         <div className="avatar-wrapper">
           <Avatar
             body={data.body}
@@ -79,11 +80,10 @@ function App() {
             glass={data.glasses}
             hat={data.hats}
           />
-          <div>
-            <button className="button" onClick={() => randomize()}>
-              RANDOMIZE
-            </button>
-          </div>
+
+          <button className="button" onClick={() => randomize()}>
+            RANDOMIZE
+          </button>
         </div>
       </div>
     </div>

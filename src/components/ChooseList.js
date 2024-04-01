@@ -15,28 +15,28 @@ const arrItems = [
 ];
 
 function ChooseList({ total, path, set, item, select, choosed }) {
-  const [showDiv, setShowDiv] = useState(false);
+  const [showDiv, setShowDiv] = useState(true);
 
   const renderPartList = (item) => {
     setShowDiv(true);
     select(item);
   };
-
+  select(item.toLowerCase());
   return (
     <div>
-      {arrItems.map((item) => (
-        <div>
-          <button
+      <div className="choose-list">
+        {arrItems.map((item) => (
+          <div
             key={Math.random()}
-            className="choose-btn"
+            className="choose-option"
             onClick={() => renderPartList(item.toLowerCase())}
           >
             {item}
-          </button>
-        </div>
-      ))}
+          </div>
+        ))}
+      </div>
       {showDiv && (
-        <div className="part-list">
+        <div className="list-container">
           <h2>{item}</h2>
           <PartList total={total} path={path} set={set} choosed={choosed} />
         </div>

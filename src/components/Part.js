@@ -6,7 +6,6 @@ const Part = ({ path, index, zIndex }) => {
       src={`character/${path}/${index + 1}.png`}
       alt=""
       width={260}
-      height={280}
       style={{ zIndex, position: "absolute", left: 0, top: 0 }}
     />
   );
