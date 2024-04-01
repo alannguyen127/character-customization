@@ -3,6 +3,7 @@
 ::after {
   box-sizing: border-box;
 }
+
 body {
   background-image: url(/public/images/956578.jpg);
   background-size: cover;
@@ -19,6 +20,7 @@ body {
 .main-content {
   display: flex;
   margin-top: 20px;
+  height: 75vh;
 }
 
 .title {
