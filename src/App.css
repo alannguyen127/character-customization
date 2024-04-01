@@ -1,6 +1,4 @@
-*,
-**::before,
-::after {
+* {
   box-sizing: border-box;
 }
 
@@ -64,9 +62,8 @@ h2 {
   border: 15px solid #f07167;
   padding: 50px;
   background-color: #f6f7e2;
-  top: calc(50% - 205px);
   margin-left: 30px;
-  max-height: 320px;
+  max-height: 450px;
 }
 
 .list {
