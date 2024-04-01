@@ -9,7 +9,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .container {
-  max-width: 50vw;
+  max-width: 50%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -79,7 +79,6 @@ h2 {
   border: 5px solid orange;
   border-radius: 15px;
   padding: 20px;
-  width: calc(50%-18px);
 }
 
 .img-choose {
