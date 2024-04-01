@@ -58,13 +58,13 @@ h2 {
 
 .avatar-wrapper {
   display: inline-block;
-  position: relative;
   border-radius: 40px;
   border: 15px solid #f07167;
   padding: 50px;
   background-color: #f6f7e2;
   top: calc(50% - 205px);
   margin-left: 30px;
+  max-height: 320px;
 }
 
 .list {
