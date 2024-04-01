@@ -57,16 +57,13 @@ h2 {
 }
 
 .avatar-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: inline-block;
+  position: relative;
   border-radius: 40px;
   border: 15px solid #f07167;
   padding: 50px;
-  position: relative;
   background-color: #f6f7e2;
-  /* top: calc(50% - 205px); */
-  max-height: 320px;
+  top: calc(50% - 205px);
   margin-left: 30px;
 }
 
@@ -110,7 +107,6 @@ h2 {
   cursor: pointer;
   background-color: #f6f7e2;
   border: 3px solid orange;
-  /* max-width: 100px; */
   display: flex;
   font-weight: 600;
 }
@@ -124,13 +120,13 @@ h2 {
   background-color: #8bc5b8;
   border: none;
   border-radius: 15px;
+  position: relative;
+  left: 25%;
   padding: 10px;
-  margin: 0 20px;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
-  transition-duration: 0.2s;
   font-size: 1.2rem;
 }
 
